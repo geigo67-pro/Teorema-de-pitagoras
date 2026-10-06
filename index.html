@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorema de Pitágoras</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">📐</div>
+        <div>
+            <h1>Teorema de Pitágoras de Diego Tiul</h1>
+            <p>Aprende, calcula y comprende el famoso teorema</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="hero">
+            <div class="hero-text">
+                <span class="tag">MATEMÁTICAS</span>
+
+                <h2>
+                    Descubre el poder de
+                    <span> a² + b² = c²</span>
+                </h2>
+
+                <p>
+                    El Teorema de Pitágoras permite calcular la longitud
+                    de un lado de un triángulo rectángulo conociendo
+                    los otros dos lados.
+                </p>
+
+                <button onclick="irCalculadora()">
+                     Probar calculadora
+                </button>
+            </div>
+
+            <div class="triangle-card">
+                <div class="triangle">
+                    <div class="side side-a">a</div>
+                    <div class="side side-b">b</div>
+                    <div class="side side-c">c</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXPLICACIÓN -->
+        <section class="info">
+
+            <h2>¿Cómo funciona?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="icon">🟦</div>
+                    <h3>Cateto A</h3>
+                    <p>
+                        Es uno de los lados que forman el ángulo recto.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🟩</div>
+                    <h3>Cateto B</h3>
+                    <p>
+                        Es el otro lado que forma el ángulo de 90°.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon">🟥</div>
+                    <h3>Hipotenusa</h3>
+                    <p>
+                        Es el lado más largo del triángulo y está frente
+                        al ángulo recto.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALCULADORA -->
+        <section class="calculator-section" id="calculadora">
+
+            <div class="calculator">
+
+                <div class="calculator-title">
+                    <span>🧮</span>
+
+                    <div>
+                        <h2>Calculadora de Pitágoras</h2>
+                        <p>Introduce dos valores para realizar el cálculo</p>
+                    </div>
+                </div>
+
+
+                <div class="inputs">
+
+                    <div class="input-box">
+                        <label>Cateto A</label>
+
+                        <input
+                            type="number"
+                            id="catetoA"
+                            placeholder="Ej. 3"
+                            min="0"
+                        >
+                    </div>
+
+
+                    <div class="input-box">
+                        <label>Cateto B</label>
+
+                        <input
+                            type="number"
+                            id="catetoB"
+                            placeholder="Ej. 4"
+                            min="0"
+                        >
+                    </div>
+
+
+                    <div class="input-box">
+                        <label>Hipotenusa C</label>
+
+                        <input
+                            type="number"
+                            id="hipotenusa"
+                            placeholder="Ej. 5"
+                            min="0"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="buttons">
+
+                    <button onclick="calcular()">
+                         Calcular
+                    </button>
+
+                    <button class="clear" onclick="limpiar()">
+                         Limpiar
+                    </button>
+
+                </div>
+
+
+                <div class="resultado" id="resultado">
+                    <span></span>
+                    <p>Introduce los valores para comenzar.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EJEMPLO -->
+        <section class="example">
+
+            <h2>Ejemplo clásico</h2>
+
+            <div class="example-content">
+
+                <div class="formula">
+                    <p>Si tenemos:</p>
+
+                    <strong>
+                        a = 3
+                    </strong>
+
+                    <strong>
+                        b = 4
+                    </strong>
+
+                    <p>Entonces:</p>
+
+                    <h3>
+                        3² + 4² = c²
+                    </h3>
+
+                    <h3>
+                        9 + 16 = 25
+                    </h3>
+
+                    <h2>
+                        c = 5
+                    </h2>
+                </div>
+
+                <div class="example-result">
+                    <div class="big-number">5</div>
+                    <p>Hipotenusa</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>📐 Proyecto educativo — Teorema de Pitágoras</p>
+        <p>Hecho en HTML, CSS y JavaScript</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
